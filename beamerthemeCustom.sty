@@ -32,8 +32,8 @@
 % to disable the navigation bar
 \setbeamertemplate{navigation symbols}{}
 
-% standard slide
-\setbeamercolor{frametitle}{bg=IndigoCN,fg=YellowCN}
+% standard slide : title
+\setbeamercolor{frametitle}{bg=WhiteCN,fg=IndigoCN}
 
 \setbeamercolor{palette primary}{bg=IndigoCN,fg=WhiteCN}
 \setbeamercolor{palette secondary}{bg=Color2}
@@ -56,6 +56,9 @@
 %\setbeamertemplate{frametitle}{
 %      \expandafter\MakeUppercase\expandafter\insertframetitle
 %}
+\setbeamertemplate{frametitle}{
+\includegraphics[height=4.2pt]{logos/traitjaune.png} \\ \insertframetitle}
+
 
 \newcommand{\code}[1]{\textcolor{BlueCN}{\footnotesize{\texttt{#1}}}}
 \newcommand{\entity}[1]{\textcolor{Color2}{#1}}
