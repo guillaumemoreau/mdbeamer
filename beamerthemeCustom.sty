@@ -23,6 +23,7 @@
 
 \hypersetup{colorlinks,linkcolor=,urlcolor=Color3}
 
+
 \useoutertheme{split}
 \usecolortheme{whale}
 \usecolortheme{orchid}
@@ -41,16 +42,22 @@
 
 \setbeamercolor{normal text}{fg=IndigoCN}
 \setbeamercolor{block title}{bg=YellowCN}
-\setbeamercolor{example text}{fg=Color3}
+\setbeamercolor{example text}{fg=BlueCN}
 \setbeamercolor{alerted text}{fg=Color1}
 
 \setbeamercolor{item}{parent=normal text}
-\setbeamercolor{section in toc}{fg=Color3}
+\setbeamercolor{section in toc}{fg=BlueCN}
 
 % title blocks: can be better depending on selected colors
 %\setbeamercolor{titlelike}{bg=Color2,fg=white}
 
-\newcommand{\code}[1]{\textcolor{Color3}{\footnotesize{\texttt{#1}}}}
+%update on slide title
+\setbeamerfont{frametitle}{series=\bfseries}
+%\setbeamertemplate{frametitle}{
+%      \expandafter\MakeUppercase\expandafter\insertframetitle
+%}
+
+\newcommand{\code}[1]{\textcolor{BlueCN}{\footnotesize{\texttt{#1}}}}
 \newcommand{\entity}[1]{\textcolor{Color2}{#1}}
 \newcommand{\good}{\textcolor{green}{\smiley}}
 \newcommand{\bad}{\textcolor{red}{\frownie}}
