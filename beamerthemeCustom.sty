@@ -51,6 +51,8 @@
 % title blocks: can be better depending on selected colors
 %\setbeamercolor{titlelike}{bg=Color2,fg=white}
 
+
+
 %update on slide title
 \setbeamerfont{frametitle}{series=\bfseries}
 %\setbeamertemplate{frametitle}{
@@ -59,6 +61,15 @@
 \setbeamertemplate{frametitle}{
 \includegraphics[height=4.2pt]{logos/traitjaune.png} \\ \insertframetitle}
 
+%subtitle for some frames
+\setbeamercolor{framesubtitle}{fg=YellowCN}
+\addtobeamertemplate{frametitle}{}{%
+  \ifx\insertframesubtitle\@empty\else%
+  \usebeamerfont{framesubtitle}%
+  \usebeamercolor[fg]{framesubtitle}%
+  \\ \insertframesubtitle%
+  \fi%
+}
 
 \newcommand{\code}[1]{\textcolor{BlueCN}{\footnotesize{\texttt{#1}}}}
 \newcommand{\entity}[1]{\textcolor{Color2}{#1}}

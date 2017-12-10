@@ -1,6 +1,6 @@
 % Du markdown au beamer
-% Romain Vimont (®om)
-% 15 février 2014
+% Guillaume Moreau
+% 10 décembre 2017
 
 # Pourquoi ?
 
@@ -11,6 +11,7 @@
 - Le résultat est le même que *Beamer*
 
 ## Du code
+\framesubtitle{On peut inclure un sous-titre avec framesubtitle}
 
 La coloration de code est très simple.
 
