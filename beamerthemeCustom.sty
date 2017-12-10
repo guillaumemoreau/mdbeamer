@@ -1,7 +1,13 @@
 % the 3 colors
-\definecolor{Color1}{HTML}{25567B}
-\definecolor{Color2}{HTML}{033E6B}
-\definecolor{Color3}{HTML}{66A3D2}
+\definecolor{BlueCN}{HTML}{102648}
+\definecolor{YellowCN}{HTML}{FAB600}
+\definecolor{WhiteCN}{HTML}{FFFFFF}
+
+% for the colors that have not been defined yet (workarounf for compilation only)
+\definecolor{Color1}{HTML}{FF0000} %red
+\definecolor{Color2}{HTML}{00FF00} %green
+\definecolor{Color3}{HTML}{0000FF} %blue
+
 % the logo on the title page
 \titlegraphic{\includegraphics[height=1.5cm]{logos/logocn.png}}
 % the logo on every page
@@ -19,15 +25,16 @@
 % to disable the navigation bar
 \setbeamertemplate{navigation symbols}{}
 
-\setbeamercolor{frametitle}{bg=white,fg=Color2}
+% standard slide
+\setbeamercolor{frametitle}{bg=BlueCN,fg=YellowCN}
 
-\setbeamercolor{palette primary}{bg=Color3,fg=white}
+\setbeamercolor{palette primary}{bg=BlueCN,fg=WhiteCN}
 \setbeamercolor{palette secondary}{bg=Color2}
 \setbeamercolor{palette tertiary}{bg=Color3}
-\setbeamercolor{palette quaternary}{bg=Color1}
+\setbeamercolor{palette quaternary}{bg=BlueCN}
 
-\setbeamercolor{normal text}{fg=Color1}
-\setbeamercolor{block title}{bg=Color2}
+\setbeamercolor{normal text}{fg=BlueCN}
+\setbeamercolor{block title}{bg=YellowCN}
 \setbeamercolor{example text}{fg=Color3}
 \setbeamercolor{alerted text}{fg=Color1}
 
